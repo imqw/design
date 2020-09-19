@@ -14,12 +14,16 @@ public class PersonFactoryTest {
 
     @Test
     public void getPerson() {
-
         Person person = PersonFactory.getPerson("1");
-
         person.name();
         person.run();
 
+        person = PersonFactory.getPerson("2");
+        person.name();
+        person.run();
 
+        person = PersonFactory.getPerson("3");
+        person.name();
+        person.run();
     }
 }
